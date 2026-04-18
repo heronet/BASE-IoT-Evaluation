@@ -1,0 +1,16 @@
+/ {
+	aliases {
+		biometric0 = &fingerprint0;
+	};
+};
+
+&usart2 {
+	status = "okay";
+	current-speed = <57600>;
+
+	fingerprint0: fingerprint0 {
+		compatible = "zhiantec,zfm-x0";
+		status = "okay";
+		comm-addr = <0xffffffff>;
+	};
+};

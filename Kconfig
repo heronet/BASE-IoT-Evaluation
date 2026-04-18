@@ -1,0 +1,14 @@
+menu "Biores Options"
+
+config TEST_LEGACY_BLOCKING
+	bool "Use legacy busy-wait baseline instead of BASE"
+	default n
+	help
+	  When enabled, tau2 uses k_busy_wait(500000) to simulate
+	  a vendor polling library during image capture.
+	  When disabled, tau2 uses the BASE biometric subsystem
+	  with interrupt-driven enroll_capture.
+
+endmenu
+
+source "Kconfig.zephyr"

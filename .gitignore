@@ -1,0 +1,27 @@
+# Zephyr/CMake build output
+build/
+
+# CMake generated files (if generated in-source)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Ninja/generated metadata
+*.ninja
+.ninja_*
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Editor/OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Logs/temp
+*.log
+*.tmp
+
+.cache/
